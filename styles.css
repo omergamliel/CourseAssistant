@@ -1,0 +1,120 @@
+/* Global settings for box-sizing across all elements, setting a consistent border-box model and default font family. */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Hebrew', cursive;
+}
+
+/* Base body styles, setting the background gradient, font properties, and alignment. */
+body {
+    font-family: 'IBM Plex Sans Hebrew', cursive;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 100px;
+    color: #FFF;
+    background-image: radial-gradient(circle, #6dd3e7 0%, #2EB5E5 70%, #6dd3e7 100%);
+    overflow-x: hidden;
+}
+
+/* Styles for select elements and text inputs to enforce right-to-left text direction for Hebrew. */
+select, input[type="text"] {
+    direction: rtl;
+}
+
+/* Styling for the search container, including background, padding, margins, and shadow for focus. */
+.search-container {
+    margin: auto;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Header styles, defining the color of the main title in the search container. */
+h1 {
+    color: #007bff;
+}
+
+/* Common styles for select elements and text inputs, defining their layout and visual formatting. */
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Styling for the results container, specifying the flex layout to handle course blocks dynamically. */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Styles for individual course entries, including background, text alignment, and responsive widths. */
+.course {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for courses, providing a slight vertical lift to indicate interactivity. */
+.course:hover {
+    transform: translateY(-5px);
+}
+
+/* Alternative background color for odd-numbered course blocks to enhance visual differentiation. */
+.course:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+/* Styling for course titles, IDs, and lecturer names to ensure they occupy the full width and are displayed as block elements for proper text wrapping. */
+.course-title, .course-id, .lecturer-name {
+    width: 100%;
+    text-align: center;
+    display: block; /* Makes sure these elements are treated as block level elements allowing text wrapping */
+}
+
+/* Styling for course titles within course blocks, emphasizing importance with bold and color. */
+.course-title {
+    font-weight: bold;
+    color: #6f2dbd;
+}
+
+/* Styling for exercise markers within courses, using a distinct green color for emphasis. */
+.exercise {
+    color: #40916c;
+}
+
+/* Specific styles for course ID display, using bold font and a standard color for clarity. */
+.course-id {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Styling for displaying lecturer names, italicized to differentiate from other text. */
+.lecturer-name {
+    margin-top: 5px;
+    font-style: italic;
+    color: #242424;
+}
+
+footer {
+    text-align: center; 
+    color: black; 
+}

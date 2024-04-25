@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Page Title -->
+    <title>מערכת חיפוש קורסים</title>
+
+    <!-- Linking to external CSS files -->
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="effects.css">
+
+    <!-- Importing Google Fonts & jQuery & Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Hebrew" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+</head>
+
+<body>
+    <div id="cloudsContainer"></div>
+    <div class="search-container">
+        <!-- Main heading-->
+        <h1 class="display-4 text-center my-4">מערכת חיפוש קורסים</h1>
+
+        <!-- Dropdown to select the department -->
+        <select class="custom-select custom-select-lg" id="departmentSelect">
+        <option value="">בחירת מסלול הלימוד</option>
+        </select>
+
+        <!-- Input field for entering the course name -->
+        <input type="text" id="courseInput" class="form-control form-control-lg" placeholder="שם הקורס">
+        <div id="results"></div>
+    </div>
+
+    <footer>
+        <p>Created by <a href="https://www.linkedin.com/in/omergamliel/" target="_blank">@OmerGamliel</a></p>
+    </footer>    
+
+    <!-- Linking to external Javascript file -->
+	<script src="app.js"></script>
+
+</body>
+</html>
